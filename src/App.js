@@ -8,18 +8,17 @@ import Ejemplo2 from './hooks/ejemplo2';
 import MiComponenteConContexto from './hooks/ejemplo3';
 import Ejemplo4 from './hooks/ejemplo4';
 import Allcycles from './hooks/lifecycle/AllCycles';
+import Greetingstyled from './components/pure/greetingStyled';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         {/*Componente propio Greetinf.jsx*/}
         {/* <Greetings name="Martin"></Greetings> */}
         {/* Componente de ejemplo funcional */}
         {/* <Greetingsf name="Martin"></Greetingsf> */}
         {/* Componente de Listado de Tareas */}
-        {/* <TaskListComponent></TaskListComponent> */}
+        <TaskListComponent></TaskListComponent>
         {/* Ejemplos de uso de HOOKS */}
         {/* <Ejemplo1></Ejemplo1> */}
         {/* <Ejemplo2></Ejemplo2> */}
@@ -29,8 +28,8 @@ function App() {
             Contenido del props.children
           </h3>
         </Ejemplo4> */}
-        <Allcycles></Allcycles>
-      </header>
+        {/* <Allcycles></Allcycles> */}
+        {/* <Greetingstyled name="Pablo"></Greetingstyled> */}
     </div>
   );
 }
